@@ -15,6 +15,10 @@ dict_stats_j2 = {
     "Attaque" : 3,
     "PV" : 100
 }
+dict_stats_j3 = dict_stats_j1 # pas une copie, ça reste le même dictionnaire
+dict_stats_j4 = dict_stats_j2.copy() # copie : créer un nouveau dictionnaire et copier les valeurs
 print(dict_stats_j1, dict_stats_j2)
 simuler_attaque(dict_stats_j1, dict_stats_j2)
 print(dict_stats_j1, dict_stats_j2)
+print(dict_stats_j3) # oups le j3 a été attaqué en même temps que le j1 car c'est le même joueur
+print(dict_stats_j4)
