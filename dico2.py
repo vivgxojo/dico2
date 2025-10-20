@@ -4,8 +4,8 @@ def simuler_attaque(j1: dict, j2: dict):
     :param j1: dictionnaire de stats du joueur 1
     :param j2: dictionnaire de stats du joueur 2
     """
-    dict_stats_j1["PV"] -= dict_stats_j2["Attaque"]    # si (attaque - défense) > 0
-    dict_stats_j2["PV"] -= dict_stats_j1["Attaque"]    # pv = pv - (attaque - défense)
+    j1["PV"] -= j2["Attaque"]    # si (attaque - défense) > 0
+    j2["PV"] -= j1["Attaque"]    # pv = pv - (attaque - défense)
 
 dict_stats_j1 = {   # TODO : ajouter la défense
     "Attaque" : 5,
